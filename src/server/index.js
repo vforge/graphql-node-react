@@ -44,7 +44,7 @@ const root = {
     let index = POSTS.length;
 
     if (id != null && id >= 0 && id < POSTS.length) {
-      if (POSTS[id].authorId !== id) return null;
+      if (POSTS[id].author !== author) return null;
 
       POSTS.splice(id, 1, post);
       index = id;
